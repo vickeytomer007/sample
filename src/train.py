@@ -50,7 +50,7 @@ clf = RandomForestClassifier(
 )
 
 clf.fit(x, labels)
-mlflow.sklearn.log_model(clf, "my_model")
+# mlflow.sklearn.log_model(clf, "my_model")
 
 with open(output, 'wb') as fd:
     pickle.dump(clf, fd)
