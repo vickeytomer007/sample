@@ -11,7 +11,7 @@ import logging
 #adding logging code
 logging.basicConfig(level=logging.WARN)
 logger=logging.getLogger(__name__)
-version='v2'
+version='v4'
 params = yaml.safe_load(open('params.yaml'))['train']
 
 if len(sys.argv) != 3:
